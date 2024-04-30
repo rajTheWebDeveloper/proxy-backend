@@ -15,7 +15,7 @@ app.use('/api',ProductRoutes)
 
 
 
-app.listen(2000,()=>
+app.listen(process.env.PORT,()=>
 {
-    console.log("Connected to PORT 2000")
+    console.log(`Connected to PORT ${process.env.PORT}`)
 })
